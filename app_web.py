@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_community.tools.tavily_search import TavilySearchResults
-from langchain.agents import create_openai_tools_agent, AgentExecutor  # Tente esta forma unificada primeiro
+from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.memory import ConversationBufferMemory
 
