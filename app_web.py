@@ -2,8 +2,7 @@ import os
 import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_community.tools.tavily_search import TavilySearchResults
-# Aqui está a mudança principal para 2025:
-from langchain.agents import AgentExecutor, create_tool_calling_agent
+from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.memory import ConversationBufferMemory
 
