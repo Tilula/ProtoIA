@@ -9,3 +9,4 @@ gunicorn
 Flask
 python-dotenv
 tavily-python
+langchain-classic
