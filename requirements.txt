@@ -4,3 +4,5 @@ langchain-community
 langchain-core
 langchain
 Pillow
+gunicorn
+Flask
