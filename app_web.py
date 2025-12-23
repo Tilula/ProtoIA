@@ -39,7 +39,7 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
 # Cria o executor do agente (reutiliza a memória da sessão)
-agent = create_openai_tools_agent(llm, tools, prompt)
+agent = create_tool_calling_agent(llm, tools, prompt)
 proto_ia_engine = AgentExecutor(
     agent=agent, 
     tools=tools, 
