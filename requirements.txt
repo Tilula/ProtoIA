@@ -1,12 +1,7 @@
 streamlit
 langchain>=0.3.0
-langchain-groq
 langchain-community
+langchain-groq
 langchain-core
-langchain-openai
-Pillow
-gunicorn
-Flask
-python-dotenv
 tavily-python
-langchain-classic
+pillow
